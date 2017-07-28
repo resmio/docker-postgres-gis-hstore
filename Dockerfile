@@ -1,6 +1,5 @@
-FROM postgres:9.4.8
-MAINTAINER jann.kleen@gmail.com
+FROM postgres:9.6.1
+MAINTAINER developers@resmio.com
 
-RUN apt-get update && apt-get install -y postgresql-9.4-postgis-2.3
-
-ADD 00_make_extensions.sh /docker-entrypoint-initdb.d/
+RUN apt-get update
+RUN apt-get install -y postgresql-9.6-postgis-2.3
