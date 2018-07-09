@@ -1,4 +1,4 @@
-FROM postgres:9.6.1
+FROM postgres:9.6.6
 MAINTAINER developers@resmio.com
 
 RUN apt-get update
